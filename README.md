@@ -21,3 +21,7 @@ btw even thouh i believe in jesus
 i still glad to show our culture to everyone 
 
 dc:https://discord.gg/5gr3VhHpGM
+
+https://imgur.com/TZfa1Sh
+
+https://imgur.com/EWZiLVn
