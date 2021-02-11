@@ -16,8 +16,8 @@ you can translate in language.lua
 
 be free to ask any question
 
-btw i believe in jesus 
+btw even thouh i believe in jesus
 
-but i'm glad to show our culture to everyone 
+i still glad to show our culture to everyone 
 
 dc:https://discord.gg/5gr3VhHpGM
