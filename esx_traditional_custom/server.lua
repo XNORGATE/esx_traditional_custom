@@ -9,7 +9,7 @@ ESX.RegisterUsableItem('taiwanToss', function(source)
         if v == sid then
 			return TriggerClientEvent('esx:showNotification', wait)
 		end
-    end
+        end
 
 	if math.random(1,10) > 9 then 
 		table.insert(hasCustom, sid)
