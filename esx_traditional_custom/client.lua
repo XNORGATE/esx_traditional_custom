@@ -8,9 +8,9 @@ end)
 local templePos = vec(492.28, -1039.66, 28.34)
 
 RegisterNetEvent('xng:usedToss')
-AddEventHandler('xng:usedToss', function()
+AddEventHandler('xng:usedToss', function(player)
 	local ped = PlayerPedId()
-	local name = GetPlayerName(GetPlayerFromServerId(ped))
+	local name = GetPlayerName(GetPlayerFromServerId(player))
     if #(GetEntityCoords(ped) - templePos) <= 2 then
 		ESX.ShowNotification(wish_custom)
 		Citizen.Wait(3000)
