@@ -10,6 +10,7 @@ local templePos = vec(492.28, -1039.66, 28.34)
 RegisterNetEvent('xng:usedToss')
 AddEventHandler('xng:usedToss', function()
 	local ped = PlayerPedId()
+	local name = GetPlayerName(GetPlayerFromServerId(ped))
     if #(GetEntityCoords(ped) - templePos) <= 2 then
 		ESX.ShowNotification(wish_custom)
 		Citizen.Wait(3000)
@@ -21,17 +22,17 @@ AddEventHandler('xng:usedToss', function()
         local rate = math.random(1,3)		
         if rate == 1 then 
 			PlaySound(-1, 'Menu_Accept', 'Phone_SoundSet_Default', 0, 0, 1)
-			ESX.Scaleform.ShowFreemodeMessage(TossResult_nice, GetPlayerName(PlayerId())..TossResult, 5)
+			ESX.Scaleform.ShowFreemodeMessage(TossResult_nice, name..TossResult, 5)
 			ESX.ShowNotification(TossResult_nice_mean)
             TriggerEvent('esx:showNotification', got_money)    
             TriggerServerEvent('xng:tossedMoney')
         elseif rate == 2 then 
 			PlaySound(-1, 'Menu_Accept', 'Phone_SoundSet_Default', 0, 0, 1)
-			ESX.Scaleform.ShowFreemodeMessage(TossResult_hmmm, GetPlayerName(PlayerId())..TossResult, 5)
+			ESX.Scaleform.ShowFreemodeMessage(TossResult_hmmm, name..TossResult, 5)
 			ESX.ShowNotification(TossResult_hmmm_mean)   
         elseif rate == 3 then
 			PlaySound(-1, 'Menu_Accept', 'Phone_SoundSet_Default', 0, 0, 1)
-			ESX.Scaleform.ShowFreemodeMessage(TossResult_nah, GetPlayerName(PlayerId())..TossResult, 5)
+			ESX.Scaleform.ShowFreemodeMessage(TossResult_nah, name..TossResult, 5)
 			ESX.ShowNotification(TossResult_nah_mean)
         end
     else
